@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="">
+  <title>Banking Form</title>
+</head>
+<body>
+  <h1>Loan Application Form</h1>
+  <form>
+    First Name: <input type="text" name="firstname" placeholder="First Name">
+    Middle Initial: <input type="text" size="3" name="middleinit" placeholder="MI">
+    Last Name: <input type="text" name="lastname" placeholder="Last Name"><br>
+    Address: <input type="text" size="40" name="address" placeholder="1111 East St, Somewhere, State zip"><br>
+    Occupation: <input type="text" size="20" name="occupation" placeholder="Your job">
+    Employer: <input type="text" size="20" name="employername" placeholder="Name of Employer"><br>
+    Employer Address: <input type="text" size="40" name="employeraddress" placeholder="1111 East St, Somewhere, State zip"><br>
+    
+    Please select your loan type:
+    <select>
+      <option name="commercial" value="commercial">Commercial</option>
+      <option name="realestate" value="realestate">Real Estate</option>
+      <option name="personal" value="personal">Personal</option>
+      <option name="mortgage" value="mortgage">Mortgage</option>
+    </select>
+    <br>
+    Requested Loan Amount: <input type="number" name="loanammount" size="15" placeholder="0000000">
+    <br>
+    Requested loan duration: <input type="radio" name="loanduration" value="5years" checked="checked"> 5 Years
+    <input type="radio" name="loanduration" value="15years">15 Years
+    <input type="radio" name="loanduration" value="30years">30 Years<br>
+    Special Conditions: 
+    <input type="checkbox" name="downpayment" value="downpayment"> I have a down payment
+    <input type="checkbox" name="outofstate" value="outofstate"> Out-of-state resident
+    <input type="checkbox" name="married" value="married"> Married
+    <input type="checkbox" name="cosigned" value="cosigned"> Loan will be co-signed
+    <br>
+    Additional comments:
+    <textarea name="extraText" rows="4" cols="30"></textarea>
+    <br>
+    Email Address: <input type="email" name="email" placeholder="email@site.com">
+    <br>
+    Telephone Number: <input type="tel" size="13" placeholder="(xxx)xxx-xxxx">
+    <br>
+    LinkedIn Address: <input type="url" name="linkedin" placeholder="URL"><br>
+    <input type="submit" value="Submit Loan">
+
+  </form>    
+</body>
+</html>

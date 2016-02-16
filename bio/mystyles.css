@@ -1,0 +1,30 @@
+
+.mainnavlist > li {
+  display: inline;
+  background-color: lightgrey;
+  padding: 12px;
+}
+
+h3 {
+  display: list-item;
+  list-style: disc;
+}
+
+.duties {
+  margin-left: 4%;
+}
+
+.contact {
+  font-size: 1.2em;
+  font-weight: bold;
+  text-decoration: underline overline;
+  margin-left: 5%;
+
+}
+
+.info {
+  font-size: 1.1em;
+  font-style: italic;
+  text-indent: 7%;
+
+}

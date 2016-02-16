@@ -1,0 +1,311 @@
+/**/
+/*Global border-box sizing for easier calculations*/
+/**/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: darkgray;
+}
+
+/**/
+/*Main Navbar styling*/
+/**/
+
+/*Pushes the Sticky Navbar Header Down*/
+.navbar {
+  margin-top: 50px;
+}
+
+/*"Sticks" the nav bar to the top of the page*/
+.navbar > nav {
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  background-color: darkgray;
+  width: 100%;
+}
+
+/*Displays List Items in a Row*/
+nav > ul > li {
+  display: inline;
+  font-family: 'Comfortaa', cursive;
+  font-weight: 600;
+  background-color: lightgray;
+  margin-right: 2px;
+  padding: 5px;
+  border-radius: 2px;
+}
+
+/*When you hover over a nav item it changes from the default to "gray"*/
+nav > ul > li:hover {
+  background-color: gray;
+}
+
+/*Gets Rid of the Underline and sets color black*/
+.navbar a {
+  text-decoration: none;
+  color: black;
+}
+
+/*Keeps visited nav links black*/
+.navbar a:visited {
+  color: black;
+}
+
+/*Makes the nav item for the current page 'Red'*/
+.current {
+  color: red;
+}
+
+
+/**/
+/*Title bar styling*/
+/**/
+
+/*Sets everything as a column flex for easy styling*/
+.title {
+  display: flex;
+  flex-direction: column;
+}
+
+/*Standardizes the h1-3 headings across all pages*/
+h1, h2, h3 {
+  font-family: 'Varela Round', sans-serif;
+  text-align: center;
+  padding: 3px 0 0 0;
+  margin: 0 0 5px 0;
+}
+
+/*Flexes the main page title pics as a column flex for easy styling*/
+.pics {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/*Styles the main images*/
+.mainimg {
+  width: 450px;
+  margin: 5px;
+  border: 3px solid black;
+  border-radius: 1em;
+}
+
+/**/
+/*Styling for Main Page Layout*/
+/**/
+
+/*Styles the main articles*/
+.main-articles {
+  background: lightgray;
+  font-size: 1.3em;
+  padding: 0 1em 0 1.2em;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  border-radius: 5px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+/*Styles the Administration Biography Article*/
+.admin-bios {
+  display: flex;
+  align-items: center;
+  background: darkgray;
+  padding: 0 0 0.15em 0;
+  border-top: 3px solid gray;
+  border-bottom: 3px solid gray;
+  border-radius: 20px;
+  margin-bottom: 1em;
+}
+
+/*Styles the sub-articles for each Admin Biography*/
+.admin-bios div {
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+}
+
+/*Styles the Admin Biography names*/
+.admin-bios h4 {
+  text-decoration: overline underline;
+  margin: 0;
+  padding-left: 2em;
+}
+
+/*Styles the Admin Biography Text*/
+.admin-bios p {
+  font-size: 1.3rem;
+  margin-left: 7%;
+}
+
+/*Styles the Admin Pictures*/
+.imgadmin {
+  width: 150px;
+  height: auto;
+  border-radius: 2em;
+  margin: 0.5em 2em 0 2em ;
+}
+
+
+/**/
+/*Styling for Product Page Layout*/
+/**/
+
+/*Styles the Product Articles*/
+.productarticles {
+  border-top: 2px solid gray;
+  margin: 5px;
+}
+
+/*Styling for the individual product sections*/
+.productitems {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 5px;
+}
+
+/*Styles the Product Descriptions*/
+.productdescription {
+  font-size: 1.3em;
+  max-width: 525px;
+  margin-top: 25px;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  background-color: #cdc6c6;
+  border-radius: 2px 15px 2px 15px;
+  box-shadow: 10px 10px 5px #888888;
+}
+
+/*Styles the Product Images*/
+.productimage {
+  max-width: 400px;
+  margin-left: 25px;
+  border: 3px solid black;
+  border-radius: 50px;
+}
+
+/*Styles the Product Purchase Footer Text*/
+.productfooter {
+  font-size: 1.3em;
+  font-family: 'Varela Round', sans-serif;
+  text-align: center;
+}
+
+/*Styles the Product Purchase Footer Images*/
+.productfooter img {
+  display: block;
+  padding: 5px;
+  background-color: white;
+  margin: 10px auto 0 auto;
+  border-radius: 2px;
+}
+
+/*Styling for the Special Notes in the product descriptions*/
+.productnote {
+  display: block;
+  font-size: 0.75em;
+  margin-top: 3px;
+}
+
+/*Styling for "Backordered" Items*/
+.backordered {
+  display: inline;
+  font-size: 1.1em;
+  font-weight: bolder;
+  color: red;
+}
+
+/**/
+/*Styling for Culture Page Layout*/
+/**/
+
+/*Styling for the main Culture Div */
+.culturediv {
+  display: block;
+  border-top: 5px solid #141010;
+  border-bottom: 5px solid #141010; 
+  max-width: 1100px;
+  margin: 15px auto 15px auto;
+  background-color: #858585;
+  border-radius: 3px;
+  }
+
+/*Styling for the individual Culture pics */
+.culturepics {
+  display: block;
+  width: 75%;
+  max-width: 800px;
+  min-width: 250px;
+  margin: 5px auto 15px auto;
+  border-radius: 3px;
+}
+
+/*Styling for the captions for the individual Culture Pics */
+figcaption {
+  display: block;
+  text-align: center;
+  width: 72%;
+  padding: 5px;
+  margin: -18px auto 1px auto;
+  border-radius: 3px;
+  background-color: black;
+  color: white;
+  z-index: 100;
+}
+
+/*Styling for the Culture heading "Rules" */
+.culturerules {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/*Styling for the Culture descriptive text */
+.culturetext p {
+  font-size: 1.3em;
+  margin: 0 2em 2em 2em;
+}
+
+/**/
+/*Styling for Contact Page Layout*/
+/**/
+
+/*Styling for the Contact Page Item Boxes*/
+.contacttext {
+  font-size: 1.3em;
+  margin: 2em 2em 2em 2em;
+  border: 2px solid black;
+  background-color: tan;
+  border-radius: 5px;
+}
+
+/*Styling for the Contact Page Text Items*/
+pre {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+pre a {
+  color: black;
+}
+
+/**/
+/*Styling for the Footer on Every Page*/
+/**/
+.mainfooter {
+  display: block;
+  position: relative;
+  font-family: 'Varela Round', sans-serif;
+  max-width: 350px;
+  top: 90%;
+  left: 65%;
+}
